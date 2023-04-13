@@ -1,0 +1,28 @@
+stages:
+  - build
+
+  
+
+variables:
+  CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+build_job:
+  stage: build
+  script:
+    - sudo docker login -u $CI_REGISTRY_USER -p $CI_JOB_TOKEN $CI_REGISTRY
+    - sudo docker build -t $CONTAINER_TEST_IMAGE .
+    - sudo docker push $CONTAINER_TEST_IMAGE
+    - sudo docker logout $CI_REGISTRY
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "main"
+
+  
+after_script:
+    - >
+      if [ $CI_JOB_STATUS == 'success' ]; then
+        sudo bash /home/ubuntu/refresh.sh
+      else
+        echo 'job failed or is cancelled'
+      fi
+

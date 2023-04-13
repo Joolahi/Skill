@@ -1,0 +1,82 @@
+.SkillSelector {
+  padding: 0 20px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(13, 0, 76);
+  color: rgb(255, 255, 255);
+  border-color: blue;
+  border-width: 2px;
+  justify-content: space-between;
+}
+
+.SkillSelector::before {
+  content: url(https://www.jamk.fi/themes/custom/jamk/images/icons/triangle-color-red.svg);
+  width: 40px;
+}
+
+.info-text:hover p {
+  text-decoration: underline;
+}
+
+.info-text:hover {
+  cursor: pointer;
+}
+
+.info-text {
+  width: 55%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.info-text p:hover {
+  text-decoration: underline;
+}
+
+
+
+.checkboxContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  font-size: medium;
+  width: 45%;
+}
+
+.checkboxContainer label {
+  display: flex;
+  width: 25%;
+  max-width: 70px;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+  background-color: #e2066f;
+  border-color: #e2066f;
+  box-shadow: 0 0 0 1px #e2066f;
+}
+
+.checkboxContainer input[type="checkbox"]:disabled {
+  background-color: #5f5f5f;
+  opacity: 0.7;
+  cursor: not-allowed;
+}

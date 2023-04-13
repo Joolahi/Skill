@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon app.js",
+    "devLegacy": "nodemon --legacy-watch app.js",
+    "start": "node ../app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.labranet.jamk.fi/it-ff-2023-t10/backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

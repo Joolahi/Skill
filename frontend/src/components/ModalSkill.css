@@ -1,0 +1,15 @@
+.modalSkill {
+  position: relative;
+}
+
+.modalExitButton {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border: 1;
+  border-color: white;
+  background-color: transparent;
+  font-size: 20;
+  cursor: pointer;
+  color: white;
+}

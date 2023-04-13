@@ -1,0 +1,28 @@
+.categories {
+  width: max-content;
+  height: 100%;
+  font-size: small;
+  box-sizing: border-box;
+  background-color: rgba(226, 6, 111, 1);
+  padding: 0 20px;
+}
+.categories h2 {
+  margin: 5px;
+  display: none;
+}
+.categories:hover {
+  position: absolute;
+  height: max-content§;
+  width: 20vw;
+  padding-bottom: 20px;
+}
+.categories:hover h2 {
+  display: block;
+}
+.categories h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.clicked {
+  color: rgb(13, 0, 76);
+}

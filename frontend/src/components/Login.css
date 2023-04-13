@@ -1,0 +1,75 @@
+.login {
+  /* background: rgb(13, 0, 76);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 0, 76, 1) 24%,
+    rgba(226, 6, 111, 1) 70%
+  ); */
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.loginbtn {
+  background-color: #e2066f;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0);
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+}
+.loginbtn:hover {
+  transition: all 0.2s ease-in;
+  border-color: #e2066f;
+  background-color: #fff;
+  color: #e2066f;
+  text-decoration: underline;
+}
+.loginForm {
+  background-color: rgb(13, 0, 76);
+  margin-top: 15vh;
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hashCode {
+  margin: 1px;
+  height: 30px;
+  width: 300px;
+  border: none;
+}
+.hashCode:focus {
+  margin: 0;
+  outline: none;
+  border: 1px solid #e2066f;
+}
+.message {
+  background-color: #ff000081;
+  height: 25px;
+  padding: 0;
+}
+.message p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 20px;
+}
